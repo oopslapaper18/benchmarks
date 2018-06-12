@@ -1,0 +1,9 @@
+This repository contains the input code benchmarks for OOPSLA 18 paper 67, "A Framework for Leveraging Domain-Specific Languages Using Program Synthesis." 
+
+Each directory at root level contains the benchmarks for each of the use cases presented in the paper:
+
+- "relational_queries" and "distributed_data_processing" contain the benchmarks for translating Java to SQL (Section 8.1) and Java to MapReduce (Section 8.3), respectively. Each of those directories contains a sub-directory named "full" that contains the original source code, and a sub-directory "fragments" that contains the source code with the actual code fragments that are translated (each one enclosed in a "labeled" block). 
+
+- "stencil_computation" contains the benchmarks for translating to the Halide DSL for GPU processing (Section 8.2), where the code inside each kernel file represents an input code fragment. 
+
+- "programmable_switches" contains the benchmarks for translating to the Domino DSL for programmable switches (Section 8.4), where the contents of each file is translated.
